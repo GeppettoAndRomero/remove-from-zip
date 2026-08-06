@@ -7,24 +7,24 @@ export const de: ToolContent = {
   htmlLang: 'de',
 
   meta: {
-    title: 'Dateien aus einem ZIP entfernen — im Browser, ohne Upload | runlocally',
+    title: 'Datei aus einem ZIP löschen — im Browser, ohne Upload | runlocally',
     description:
-      'Lösche Dateien oder Ordner aus einem .zip und lade das bereinigte Archiv herunter, ohne von Hand zu entpacken und neu zu zippen. Das Archiv wird im Browser gelesen und neu aufgebaut – nichts wird hochgeladen. Open Source, offline nutzbar.',
-    ogTitle: 'Dateien aus einem ZIP entfernen — im Browser',
+      'Das löscht nicht die ZIP-Datei selbst: Entferne einzelne Dateien oder Ordner aus dem Inhalt eines .zip und lade das bereinigte Archiv herunter, ohne von Hand zu entpacken und neu zu zippen. Das Archiv wird im Browser gelesen und neu aufgebaut – nichts wird hochgeladen. Open Source, offline nutzbar.',
+    ogTitle: 'Datei aus einem ZIP löschen — im Browser',
     ogDescription:
-      'Wähle, welche Dateien aus einem .zip fliegen, und lade eine bereinigte Kopie herunter. Im Browser gelesen und neu aufgebaut, kein Upload. Open Source, offline nutzbar.',
+      'Wähle, welche Dateien aus dem Inhalt eines .zip fliegen, und lade eine bereinigte Kopie herunter (die ZIP-Datei selbst bleibt bestehen). Im Browser gelesen und neu aufgebaut, kein Upload. Open Source, offline nutzbar.',
   },
 
   hero: {
-    h1: 'Dateien aus einem ZIP entfernen',
+    h1: 'Datei aus einem ZIP löschen',
     tagline:
-      'Lösche Dateien aus einem .zip und lade das bereinigte Archiv herunter – im Browser. Nichts wird hochgeladen.',
+      'Lösche Dateien aus dem Inhalt eines .zip und lade das bereinigte Archiv herunter – im Browser. Nichts wird hochgeladen.',
   },
 
   intro: {
     h2: 'Dateien aus einem ZIP löschen, ohne neu zu zippen',
     paras: [
-      'Dieses Werkzeug öffnet ein .zip, listet den gesamten Inhalt auf und lässt dich die Dateien oder Ordner abwählen, die weg sollen. Anschließend baut es ein frisches .zip, das nur die behaltenen Einträge enthält, und lädt es herunter – so wirst du eine verirrte Datei, einen __MACOSX-Ordner oder ein schweres Asset los, ohne das ganze Archiv von Hand zu entpacken und neu zu zippen.',
+      'Dieses Werkzeug öffnet ein .zip, listet den gesamten Inhalt auf und lässt dich die Dateien oder Ordner abwählen, die weg sollen. Anschließend baut es ein frisches .zip, das nur die behaltenen Einträge enthält, und lädt es herunter – so wirst du eine verirrte Datei, einen __MACOSX-Ordner oder ein schweres Asset los, ohne das ganze Archiv von Hand zu entpacken und neu zu zippen. Das ist nicht dasselbe wie die ZIP-Datei selbst zu löschen: Die entstehende Datei ist weiterhin ein normales .zip, nur mit weniger Inhalt.',
       'Die behaltenen Einträge werden so übernommen, wie sie gespeichert waren: Ordnerpfade und die ursprünglichen Änderungsdaten bleiben erhalten, und nichts wird neu komprimiert. Dateinamen werden mit gesetztem UTF-8-Flag geschrieben, sodass japanische und andere Nicht-ASCII-Namen korrekt bleiben, wenn das bereinigte Archiv unter Windows geöffnet wird.',
       'Alles läuft in deinem Browser mit @zip.js/zip.js. Das Archiv wird auf deinem Gerät gelesen und neu aufgebaut; es gibt keinen Upload und keinen Server, der die Arbeit übernimmt.',
     ],
@@ -63,6 +63,10 @@ export const de: ToolContent = {
 
   faqHeading: 'FAQ',
   faq: [
+    {
+      q: 'Löscht das die ZIP-Datei selbst?',
+      a: 'Nein. Du löschst einzelne Dateien oder Ordner aus dem Inhalt des Archivs; die ZIP-Datei als Ganzes bleibt bestehen, nur mit weniger Inhalt. Willst du stattdessen die ZIP-Datei selbst löschen, brauchst du dafür deinen Datei-Explorer, nicht dieses Werkzeug.',
+    },
     {
       q: 'Wird mein Archiv irgendwohin hochgeladen?',
       a: 'Nein. Das Archiv wird vollständig in deinem Browser gelesen und neu aufgebaut. Es gibt keine Serverkomponente, deine Datei hat also keinen Weg von deinem Gerät herunter. Der Quellcode ist offen, und du kannst das im Netzwerk-Panel deines Browsers bestätigen.',

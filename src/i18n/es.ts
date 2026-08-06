@@ -7,24 +7,24 @@ export const es: ToolContent = {
   htmlLang: 'es',
 
   meta: {
-    title: 'Quitar archivos de un ZIP — en tu navegador, sin subir nada | runlocally',
+    title: 'Eliminar un archivo de una carpeta ZIP — en tu navegador, sin subir nada | runlocally',
     description:
-      'Elimina archivos o carpetas de un .zip y descarga el archivo recortado, sin descomprimir y volver a comprimir a mano. El archivo se lee y se reconstruye en tu navegador; no se sube nada. Código abierto, funciona sin conexión.',
-    ogTitle: 'Quitar archivos de un ZIP — en tu navegador',
+      'Esto no elimina el archivo ZIP en sí: quita archivos o carpetas sueltas de dentro de un .zip y descarga el archivo recortado, sin descomprimir y volver a comprimir a mano. El archivo se lee y se reconstruye en tu navegador; no se sube nada. Código abierto, funciona sin conexión.',
+    ogTitle: 'Eliminar un archivo de una carpeta ZIP — en tu navegador',
     ogDescription:
-      'Elige qué archivos quitar de un .zip y descarga una copia recortada. Se lee y se reconstruye en tu navegador, sin subir nada. Código abierto, funciona sin conexión.',
+      'Elige qué archivos quitar de dentro de un .zip y descarga una copia recortada (no borra el ZIP en sí). Se lee y se reconstruye en tu navegador, sin subir nada. Código abierto, funciona sin conexión.',
   },
 
   hero: {
-    h1: 'Quitar archivos de un ZIP',
+    h1: 'Eliminar un archivo de una carpeta ZIP',
     tagline:
-      'Elimina archivos de un .zip y descarga el archivo recortado — en tu navegador. No se sube nada.',
+      'Elimina archivos de dentro de un .zip y descarga el archivo recortado — en tu navegador. No se sube nada.',
   },
 
   intro: {
-    h2: 'Elimina archivos de un ZIP sin volver a comprimir a mano',
+    h2: 'Elimina archivos de dentro de un ZIP sin volver a comprimir a mano',
     paras: [
-      'Esta herramienta abre un .zip, muestra todo lo que contiene y te deja desmarcar los archivos o carpetas que quieres eliminar. Después crea un .zip nuevo con solo las entradas que conservaste y lo descarga, para que puedas quitar un archivo suelto, una carpeta __MACOSX o un recurso pesado sin descomprimir y volver a comprimir todo el archivo a mano.',
+      'Esta herramienta abre un .zip, muestra todo lo que contiene y te deja desmarcar los archivos o carpetas que quieres eliminar. Después crea un .zip nuevo con solo las entradas que conservaste y lo descarga, para que puedas quitar un archivo suelto, una carpeta __MACOSX o un recurso pesado sin descomprimir y volver a comprimir todo el archivo a mano. Esto no borra el archivo ZIP en sí: el resultado sigue siendo un .zip normal, solo que con menos contenido.',
       'Las entradas que conservas se copian tal como estaban guardadas: se mantienen sus rutas de carpeta y sus fechas de modificación originales, y no se vuelve a comprimir nada. Los nombres se escriben con la marca UTF-8 activada, así que los nombres en japonés y otros caracteres no ASCII se mantienen correctos al abrir el archivo recortado en Windows.',
       'Todo se ejecuta en tu navegador con @zip.js/zip.js. El archivo se lee y se reconstruye en tu dispositivo; no hay subida ni un servidor haciendo el trabajo.',
     ],
@@ -63,6 +63,10 @@ export const es: ToolContent = {
 
   faqHeading: 'Preguntas frecuentes',
   faq: [
+    {
+      q: '¿Esto elimina el archivo ZIP en sí?',
+      a: 'No. Lo que se elimina son archivos o carpetas sueltas de dentro del archivo; el ZIP en sí se conserva, solo que con menos contenido. Si lo que quieres es eliminar el archivo ZIP completo, hazlo desde el explorador de archivos de tu equipo, no con esta herramienta.',
+    },
     {
       q: '¿Se sube mi archivo a algún sitio?',
       a: 'No. El archivo se lee y se reconstruye por completo en tu navegador. No hay componente de servidor, así que tu archivo no tiene forma de salir de tu dispositivo. El código es abierto y puedes confirmarlo en el panel de red de tu navegador.',
